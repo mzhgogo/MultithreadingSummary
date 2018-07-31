@@ -19,6 +19,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    /**
+     自定义队列如何创建优先级？(用哪个函数实现的)
+     dispatch_group函数 问1、多个任务并发异步执行且要求其结果是顺序的2、如何用GCD实现多张图片并发异步上传且要求其返回结果是顺序的。dispatch_group_notify、dispatch_group_wait会不会阻塞当前线程
+     dispatch_barrier函数 问：数据库读写操作时，我先读然后再写，写完后再去读取；如何实现？其有什么需要注意的么？(添加的队列可以说串行队列、主队列、全局并发队列么)
+     dispatch_once函数有什么注意事项(dispatch_once_t声明有什么要求么？可以是局部变量么)
+     dispatch_after函数延迟指定时间后一定会立即执行么？(先异步主队列task5s，再调用延时函数)
+     dispatch_block函数 问在GCD中，我使用的自定义block，把他添加到了并发异步线程里面，我想在它执行完后进行后续操作以及指定时间后还没执行完进行后续操作(取消它)
+     dispatch_semaphore函数 问：wk执行js函数时是异步block，如何同步；定位函数是代理；如何同步获取  以上均不考虑阻塞线程，加等待小菊花提示；
+     dispatch_source函数 问：用它实现定时器，简单说下；type 为DATA_ADD时有没有使用过，如进度条？有什么特性
+     特 dispatch_set_target_queue函数 有两个队列，一个并发异步、一个串行异步，想让这两个队列都按照串行异步执行，如何实现
+     */
+    
+    
+    
     //    [self testGCDGroupApi2:3];
     [self testGCDTimeApi];
 }
