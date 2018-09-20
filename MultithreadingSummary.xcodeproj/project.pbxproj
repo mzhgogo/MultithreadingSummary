@@ -18,6 +18,9 @@
 		2BD0579820C3D22600A10882 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0579620C3D22600A10882 /* MainViewController.m */; };
 		2BD0579920C3D22600A10882 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD0579720C3D22600A10882 /* MainViewController.xib */; };
 		2BD0579C20C3D25800A10882 /* GCDSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0579B20C3D25800A10882 /* GCDSummaryController.m */; };
+		2BF179B82152233E00184BAE /* NSLockSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF179B42152233D00184BAE /* NSLockSummaryController.m */; };
+		2BF179B92152233E00184BAE /* NSOperationSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF179B52152233D00184BAE /* NSOperationSummaryController.m */; };
+		2BF179BA2152233E00184BAE /* NSRunLoopSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF179B62152233E00184BAE /* NSRunLoopSummaryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		2BD0579720C3D22600A10882 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		2BD0579A20C3D25800A10882 /* GCDSummaryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDSummaryController.h; sourceTree = "<group>"; };
 		2BD0579B20C3D25800A10882 /* GCDSummaryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDSummaryController.m; sourceTree = "<group>"; };
+		2BF179B22152233D00184BAE /* NSOperationSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationSummaryController.h; sourceTree = "<group>"; };
+		2BF179B32152233D00184BAE /* NSLockSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLockSummaryController.h; sourceTree = "<group>"; };
+		2BF179B42152233D00184BAE /* NSLockSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLockSummaryController.m; sourceTree = "<group>"; };
+		2BF179B52152233D00184BAE /* NSOperationSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationSummaryController.m; sourceTree = "<group>"; };
+		2BF179B62152233E00184BAE /* NSRunLoopSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRunLoopSummaryController.m; sourceTree = "<group>"; };
+		2BF179B72152233E00184BAE /* NSRunLoopSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRunLoopSummaryController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +127,12 @@
 				2BD0579720C3D22600A10882 /* MainViewController.xib */,
 				2BD0579A20C3D25800A10882 /* GCDSummaryController.h */,
 				2BD0579B20C3D25800A10882 /* GCDSummaryController.m */,
+				2BF179B22152233D00184BAE /* NSOperationSummaryController.h */,
+				2BF179B52152233D00184BAE /* NSOperationSummaryController.m */,
+				2BF179B32152233D00184BAE /* NSLockSummaryController.h */,
+				2BF179B42152233D00184BAE /* NSLockSummaryController.m */,
+				2BF179B72152233E00184BAE /* NSRunLoopSummaryController.h */,
+				2BF179B62152233E00184BAE /* NSRunLoopSummaryController.m */,
 				2BD0576920C3D1B600A10882 /* Main.storyboard */,
 				2BD0576C20C3D1B800A10882 /* Assets.xcassets */,
 				2BD0576E20C3D1B800A10882 /* LaunchScreen.storyboard */,
@@ -276,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF179B92152233E00184BAE /* NSOperationSummaryController.m in Sources */,
+				2BF179BA2152233E00184BAE /* NSRunLoopSummaryController.m in Sources */,
 				2BD0576820C3D1B600A10882 /* ViewController.m in Sources */,
 				2BD0579C20C3D25800A10882 /* GCDSummaryController.m in Sources */,
+				2BF179B82152233E00184BAE /* NSLockSummaryController.m in Sources */,
 				2BD0577320C3D1B800A10882 /* main.m in Sources */,
 				2BD0576520C3D1B600A10882 /* AppDelegate.m in Sources */,
 				2BD0579820C3D22600A10882 /* MainViewController.m in Sources */,

@@ -8,7 +8,9 @@
 
 #import "MainViewController.h"
 #import "GCDSummaryController.h"
-
+#import "NSOperationSummaryController.h"
+#import "NSLockSummaryController.h"
+#import "NSRunLoopSummaryController.h"
 @interface MainViewController ()
 
 @end
@@ -35,8 +37,24 @@
      */
 }
 - (IBAction)goGCDAction:(UIButton *)sender {
-    GCDSummaryController *gcdView = [[GCDSummaryController alloc]init];
-    [self.navigationController pushViewController:gcdView animated:YES];
+    UIViewController *nextViewController;
+    switch (sender.tag) {
+        case 1001:
+            nextViewController = [[GCDSummaryController alloc]init];
+            break;
+        case 1002:
+            nextViewController = [[NSOperationSummaryController alloc]init];
+            break;
+        case 1003:
+            nextViewController = [[NSRunLoopSummaryController alloc]init];
+            break;
+        case 1004:
+            nextViewController = [[NSLockSummaryController alloc]init];
+            break;
+        default:
+            break;
+    }
+    [self.navigationController pushViewController:nextViewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
