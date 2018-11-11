@@ -45,7 +45,7 @@
     /*
      Adds the specified block to the receiver’s list of blocks to perform.
      The specified block should not make any assumptions about its execution environment.
-     Calling this method while the receiver is executing or has already finished causes an NSInvalidArgumentException exception to be thrown.
+     Calling this method while the receiver is executing or has already finished causes an NSInvalidArgumentException exception to be thrown
      可以 并行异步执行
      */
     [blockOp addExecutionBlock:^{

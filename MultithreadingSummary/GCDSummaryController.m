@@ -422,7 +422,7 @@
 }
 
 /**
- 主队列异步  不会阻塞当前(主main)线程；注意！！！ 没有开启子线程！！！ 结论 异步并不一定开启子线程
+ 主队列异步  不会阻塞当前(主main)线程；注意！！！ 没有开启子线程！！！ 结论 异步并不一定开启子线程 
  2018-06-03 18:01:14.520631+0800 MultithreadingSummary[9041:288072] beagin <NSThread: 0x6040000798c0>{number = 1, name = main}
  2018-06-03 18:01:14.520894+0800 MultithreadingSummary[9041:288072] end <NSThread: 0x6040000798c0>{number = 1, name = main}
  2018-06-03 18:01:14.555994+0800 MultithreadingSummary[9041:288072] task1 int <NSThread: 0x6040000798c0>{number = 1, name = main}
